@@ -28,12 +28,12 @@ class ClientController extends Controller
     {
         $request->merge([
             'cpf' => preg_replace('/\D/', '', $request->input('cpf')),      
-            'celular' => preg_replace('/\D/', '', $request->input('celular')) 
+            'phone' => preg_replace('/\D/', '', $request->input('phone')) 
         ]); 
 
         $request->validate([
             'cpf' => 'required', 
-            'celular' => 'required', 
+            'phone' => 'required', 
         ]);
 
         $client = Client::create($request->all());
@@ -56,13 +56,13 @@ class ClientController extends Controller
     {
         $request->merge([
             'cpf' => preg_replace('/\D/', '', $request->input('cpf')),
-            'celular' => preg_replace('/\D/', '', $request->input('celular')),
+            'phone' => preg_replace('/\D/', '', $request->input('phone')),
         ]);
 
         $request->validate([
             'name' => 'required',
             'cpf' => 'required|unique:clients,cpf,' . $client->id, 
-            'celular' => 'required', // ATENÇÃO: Corrigi de 'phone' para 'celular' para bater com o banco
+            'phone' => 'required',
             'address' => 'required',
         ]);
 

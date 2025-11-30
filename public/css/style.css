@@ -202,19 +202,6 @@ body {
     border-radius: 6px;
     border: 1px solid #555;
     background-color: rgba(255,255,255,0.1);
-    color: white;
-    font-family: 'Inter', sans-serif;
-}
-.form-control:focus { outline: 2px solid var(--lime-btn); border-color: transparent; }
-
-/* Busca */
-.search-bar { display: flex; gap: 10px; }
-
-/* --- Footer --- */
-footer {
-    background-color: var(--footer-bg);
-    color: var(--text-black);
-    padding: 60px 5%;
 }
 
 .footer-content {

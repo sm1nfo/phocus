@@ -19,7 +19,7 @@
         </select>
     </div>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+    <div class="form-grid">
         <div class="form-group">
             <label class="form-label">Marca</label>
             <input type="text" name="brand" value="{{ $vehicle->brand }}" class="form-control" required>
@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+    <div class="form-grid">
         <div class="form-group">
             <label class="form-label">Placa</label>
             <input type="text" name="plate" value="{{ $vehicle->plate }}" class="form-control" required>

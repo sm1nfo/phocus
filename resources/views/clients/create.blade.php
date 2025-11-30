@@ -13,14 +13,14 @@
         <input type="text" name="name" class="form-control" required>
     </div>
     
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+    <div class="form-grid">
         <div class="form-group">
             <label class="form-label">CPF</label>
             <input type="text" name="cpf" class="form-control mask-cpf" maxlength="14" placeholder="000.000.000-00" required>
         </div>
         <div class="form-group">
             <label class="form-label">Celular</label>
-            <input type="text" name="celular" class="form-control mask-phone" maxlength="15" placeholder="(00) 00000-0000">
+            <input type="text" name="phone" class="form-control mask-phone" maxlength="15" placeholder="(00) 00000-0000">
         </div>
     </div>
 

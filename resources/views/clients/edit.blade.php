@@ -13,7 +13,7 @@
         <input type="text" name="name" value="{{ $client->name }}" class="form-control" required>
     </div>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+    <div class="form-grid">
         <div class="form-group">
             <label class="form-label">CPF</label>
             <input type="text" name="cpf" value="{{ $client->cpf }}" class="form-control" required>
